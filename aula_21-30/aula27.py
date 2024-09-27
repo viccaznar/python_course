@@ -22,6 +22,22 @@ Exercício
 
 nome = input('Digite o seu nome: ')
 idade = input('Digite a sua idade: ')
-int_idade = int(idade)
 
-print(f'Seu nome é {nome}')
+if nome and idade:
+    int_idade = int(idade)
+    print(f'Seu nome é {nome}')
+    print(f'Seu nome invertido é {nome[::-1]}')
+else:
+    print('Desculpe, você deixou campos vazios.')
+
+if (' ' in nome):
+    print('Seu nome contém espaços')
+else:
+    print('Seu nome NÃO possui espaços')
+
+print(f'Seu nome tem {len(nome)} letras')
+
+print(f'A primeira letra do seu nome é {nome[0]}')
+print(f'A última letra do seu nome é {nome[-1]}')
+
+
